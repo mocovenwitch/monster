@@ -32,6 +32,25 @@ Get [Jekyll](https://jekyllrb.com/) installed, you can also check how to [setup 
 
 ### Config Tags
 
+### Config Authors
+
+### Deploy
+
+Do not let Github generate Website for you, because the theme contains its own `_plugins`. 
+
+So, you need to choose:
+
+#### Option One - for user/orgnization Website
+
+1. maintain theme source in repoA
+2. deploy it in repo username.github.io with plain HTML/CSS/JS (results in _site)
+
+#### Option Two - for project Website
+
+1. maintain theme souce code in branch master
+2. deploy it in branch [gh-pages](https://help.github.com/articles/user-organization-and-project-pages/)
+
+Remember to add ***.nojekyll*** in branch to let Github know ***DONOT BUILD***.
 
 ## Copyright & License
 
