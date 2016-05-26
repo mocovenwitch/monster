@@ -2,11 +2,12 @@
 layout: atom
 title: nil
 ---
+{% assign author = site.authors[page.author] %}
 {% for post in page.posts %}
 	<item>
 	  <title>{{ post.title }}</title>
 	  <link>{{ site.baseurl }}{{ post.url }}</link>
-	  <author>{{ site.author }}</author>
+	  <author>{{ author.name }}</author>
 	  <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
 	  <guid>{{ site.baseurl }}{{ post.url }}</guid>
 	  <description><![CDATA[
